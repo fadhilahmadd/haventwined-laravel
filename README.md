@@ -61,6 +61,46 @@ In order to ensure that the Laravel community is welcoming to all, please review
 
 If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
+
+## How to run
+
+Rename .env.example to .env
+Change 👇
+```sh
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laravel
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+Then
+
+```sh
+npm install
+```
+
+```sh
+composer install
+```
+
+```sh
+php artisan key:generate
+```
+
+```sh
+php artisan migrate
+```
+
+```sh
+php artisan db:seed
+```
+
+```sh
+php artisan serve
+```
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
