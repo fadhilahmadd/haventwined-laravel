@@ -96,6 +96,10 @@ php artisan migrate
 ```
 
 ```sh
+php artisan storage:link
+```
+
+```sh
 php artisan db:seed
 ```
 
