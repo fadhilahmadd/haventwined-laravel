@@ -18,7 +18,7 @@ use App\Http\Controllers\EventController;
 
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
-Route::get('/events', [EventController::class, 'index']);
+Route::get('/list-events', [EventController::class, 'index']);
 
 Route::middleware('auth:sanctum')->group(function () {
     Route::get('/events/stats', [EventController::class, 'stats']);
